@@ -1,0 +1,33 @@
+// Page Dividers
+.divider {
+  $divider-height: 100px;
+
+  position: relative;
+  height: $divider-height;
+  z-index: 1;
+  overflow: hidden;
+  top: -$divider-height;
+
+  div {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 110%;
+    transform: translateY(55%) rotateZ(-2deg);
+    background-color: #fff;
+  }
+
+  &.down-left,
+  &.down-right {
+    top: $divider-height;
+  }
+
+  &.down-right {
+    transform: rotateX(180deg);
+  }
+
+  &.down-left {
+    transform: rotateX(180deg) rotateY(180deg);
+  }
+}

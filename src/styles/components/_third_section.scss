@@ -1,0 +1,24 @@
+ul.main-nav {
+  li {
+    font-size: 20px;
+    text-transform: uppercase;
+    @include media-breakpoint-down(sm) {
+      font-size: 12px;
+    }
+    a {
+      color: $black-primary;
+
+      &:hover {
+        color: $dark-orange;
+        border-bottom: 3px solid $dark-orange;
+        padding-bottom: 0;
+      }
+
+      &.active {
+        color: $dark-orange !important;
+        border-bottom: 3px solid $dark-orange;
+        padding-bottom: 0;
+      }
+    }
+  }
+}

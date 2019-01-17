@@ -1,0 +1,29 @@
+/* .abv{
+    -webkit-clip-path: polygon(0 0, 100% 21%, 100% 81%, 0% 100%);
+clip-path: polygon(0 0, 100% 21%, 100% 81%, 0% 100%);
+background: red;
+} */
+
+.imgRunningMan{
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 140em;
+    z-index: 100;
+}
+
+@media screen and (max-width: 1246px) {
+    .imgRunningMan{
+    z-index: -100;
+    }
+    // .btnFloat{
+    //     /* position: absolute;
+    //     left: 10px; */
+    //     font-size: 150%!important;
+    //     margin: 0;
+    // }
+    .imgWin{
+        // visibility: hidden;
+        display: none;
+    }
+  }
